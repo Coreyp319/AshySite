@@ -1,21 +1,21 @@
+<!-- build:html Ashley-Profesional-Site/index-min.html/ -->
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Ashley Preston Hair Design - S.F. & Marin County </title>
     <meta name="Ashley Preston Hair Design - S.F. & Marin County " content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/svg" href="img/cut-icon.svg" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" type="image/svg+xml">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Libre+Baskerville'>
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Kaushan+Script'>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Kaushan+Script">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80479487-3"></script>
@@ -30,22 +30,26 @@
         gtag('config', 'UA-80479487-3');
     </script>
 
+    <script>/* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
 </head>
-
-<header>
-    <nav class="nav-down">
-        <a href="index.html#Services">Services</a>
-        <a href="index.html#locations">Locations</a>
-        <a href="index.html#portfolio">Work</a>
-        <a class="scheduler-btn" href="index.html#book-ashley">Book an Appointment</a>
-    </nav>
-
-
-</header>
 
 
 
 <body class="site">
+
+
+
+
 
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -55,61 +59,174 @@
     <!-- Splash content featuring the splash image, header etc. -->
 
     <section class="splash">
-        <div class="splash-content">
-            <div class="splash-header">
-                <h1>Ashley Preston<br>Hair Design</h1>
+        <div>
+            <div id="topnav">
+                <a href="index.html#Services">Services</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="index.html#portfolio">Work</a>
+                <a class="mdc-button" href="index.html#book-ashley">Book an Appointment</a>
+            </div>
+        </div>
+        <!-- Mobile Menu  -->
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html#Services" onclick="closeNav()">Services</a>
+                <a href="index.html#testimonials" onclick="closeNav()">Testimonials</a>
+                <a href="index.html#portfolio" onclick="closeNav()">Work</a>
+                <a class="scheduler-btn" onclick="closeNav()" href="index.html#book-ashley">Book an Appointment</a>
             </div>
 
         </div>
 
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">
+            <img class="menu-hamburger" src="img/menu.svg">
+        </span>
+
+        <!-- End of mobile menu -->
+
+        <!-- #763dc6, #c960f5, #f02fc2, #6094ea -->
+
+        <div class="splash-content">
+            <div class="splash-header">
+                <css-doodle class="splash-doodle">
+                    :doodle { @grid: 30 / 30em 15em; background: #eee; overflow: hidden; opacity: .85; } :container { transform: translate(-10%,
+                    -10%); } :after { content: '\1406'; font-size: @rand(2em, 5em, .1); color: @pick( #763dc6, #c960f5, #f02fc2,
+                    #6094ea ); transform: rotate(45deg) scaleX(@rand(1, 2, .1)) scaleY(@rand(6, 12, .1)); } transform: translate(
+                    calc(@rand(-50%, 50%) - 20%), calc(@rand(-50%, 50%) - 20%) ); mix-blend-mode: multiply;
+                </css-doodle>
+
+            </div>
+            <div class="splash-headline">
+                <h1>Ashley Preston
+                    <br>Hair Design</h1>
+            </div>
+
+
+
         </div>
-        </div>
-        <div class="down-arrow">
-            <div id="arrow-img-class"><img src="img/down-arrow.svg"/></div>
-            
-        </div>
+
+
+
     </section>
 
     <!-- Services section containing a flex-box grid of items reacting according to media query -->
     <section class="services" id="Services">
-
         <div class="services-content">
-            <h2 class="services-title">Services Offered </h2>
-            <p class="services-intro">Ashley offers a strong consultative approach, listening to the needs and desires of each client so she can advise them on how to achieve their best hair. She has mastered the art behind each hair type and texture so that she can teach her clientele to improve and maintain the health of their hair. </p>
+            <h2 class="services-title">Services</h2>
+            <p class="services-intro">Ashley offers a strong consultative approach, listening to the needs and desires of each client so she can advise
+                them on how to achieve their best hair. She has mastered the art behind each hair type and texture so that
+                she can teach her clientele to improve and maintain the health of their hair. </p>
             <div class="services-flex-boxes" id="mobile-flex">
-              <div id="cut-card">
-                <div id="cut-content"><img src="img/cut-icon.svg" alt="Cut Icon" /><h3>Styling</h3><p>Women/Men Haircut<br>Highlights:Face Frame,Partial/Full<br>Root Touch Up<br>Root Touch Up & Highlights<br>All Over Color<br>Balayage <br>Double Process<br>Color Correction<br>Gloss<br>Dry Dusting<br>Blowouts</p></div>
-              </div>
+                <div id="cut-card">
+                    <img src="img/cut-icon.svg" alt="Cut Icon" />
+                    <br>
+                    <h3>Styling</h3>
+                    <div id="cut-content">
 
-              <!-- EXTENSIONS CARD -->
-              <div id="extensions-card">
-                <div id="extensions-content"><img src="img/extensions.svg" alt="Cut Icon" /><h3>Extensions</h3><p>Great Lengths/Hot Heads Extensions:<br> Zonal
-                    <br>Volume<br>Lengthening<br><br><br><br><br><br><br><br><br><br><br><br><br></p></div>
-              </div>
+                        <ul class="services--ul__1">
+                            <li>Women/Men's Haircuts</li>
+                            <li>Highlights: Face Frame, Partial/Full</li>
+                            <li>Root Touch Up</li>
+                            <li>Root Touch Up & Highlights</li>
+                            <li>All Over Color</li>
+                        </ul>
+                        <ul services--ul__2>
+                            <li>Balayage</li>
+                            <li>Double Process</li>
+                            <li>Color Correction</li>
+                            <li>Gloss</li>
+                            <li>Dry Dusting</li>
+                            <li>Blowouts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="treatments-card">
+                    <div id="treatments-content">
+                        <img src="img/treatment.svg" alt="Cut Icon" />
+                        <h3>Treatment</h3>
+                        <p>Cezanne Keratin Treatments (non-toxic)
+                            <br>Express Treatment
+                            <br> Classic Treatment
+                            <br>(long lasting)
+                            <br>Cezanne Certified Instructor
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <!-- EXTENSIONS CARD -->
+                <div id="extensions-card">
+                    <div id="extensions-content">
+                        <img src="img/extensions.svg" alt="Cut Icon" />
+                        <h3>Extensions</h3>
+                        <p>Great Lengths/Hot Heads Extensions:
+                            <br> Zonal
+                            <br>Volume
+                            <br>Lengthening
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
 
-              <!-- TREATMENTS CARD -->
-              <div id="treatments-card">
-                <div id="treatments-content"><img src="img/treatment.svg" alt="Cut Icon" /><h3>Treatment</h3><p>Cezanne Keratin Treatments (non-toxic)<br>Express Treatment<br> Classic Treatment<br>(long lasting)<br>Cezanne Certified Instructor<br><br><br><br><br><br><br><br><br><br><br></p></div>
-              </div>
+                <!-- TREATMENTS CARD -->
+
             </div>
+        </div>
     </section>
     <!-- Section featuring Ash's locations -->
-    <section id="locations">
-        <div class="locations-content">
-            <div class="left">
-                <div class="sf">
-                    <h3 class="sf-header">@ Jackson Place Salon,<br> San Francisco</h3>
-                    <p class="sf-text">Monday - Wednesday</p>
-                </div>
+    <section id="testimonials">
+        <div class="locations-container">
+            <div class="sf">
+                <!-- <h3><span class="sf-span">@ Jackson Place Salon,<br>San Francisco<br>Monday - Wednesday</h3> </span> -->
+                <span id="sf-span">
+                    <p class="p-testimonial-1">"Ashley was warm and vivacious and made me feel very comfortable at the beginning of my first appointment
+                        with her. I was very impressed by her level of knowledge and her enthusiasm for the work she performed.
+                        Plus my hair looked great!"
+                    </p>
+                    <p class="name-testimonial-1">- Snuey P.</p>
+                </span>
+
             </div>
 
-            <div class="right">
-                <div class="marin">
-                    <h3 class="marin-header">@ Avenue Salon,<br> San Anselmo</h3>
-                    <p class="marin-text">Thursday - Friday</p>
-                </div>
-                <div class="disclaimer">
-                    <p>* Weekends available upon request.</div>
+            <div class="marin">
+                <!-- <span class="marin-span">@ Avenue Salon,<br> San Anselmo<br>Thursday - Friday</span> -->
+                <span id="marin-span">
+
+                    <p class="p-testimonial-2"> Ashley is very knowledgeable, attentive and a delight to be around. I highly recommend her for all hair
+                        needs. She is the hair professional for our whole family. Ashley is a true hair expert! "
+                    </p>
+                    <p class="name-testimonial-2 "> - Laura H. </p>
+                </span>
+
+
             </div>
 
 
@@ -139,108 +256,123 @@
                     <img src="img/right-arrow.svg" />
                 </div>
 
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-color-cut7.jpg" alt="" />
+                <!-- Test section -->
+
+
+
+                <!-- End test section -->
+
+
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut6.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut6.jpg" alt="" />
-                </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut5.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut5.jpg" alt="" />
                 </div>
 
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut3.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut3.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut2.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut2.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut6.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut7.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut8.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut7.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut5.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut8.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-color-cut16.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-balayage-cut2.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-color-cut15.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut16.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-color-cut13.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut15.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-color-cut12.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut13.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-color-cut11.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut12.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut9.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut11.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="/img/Portfolio/style-cut7.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut9.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut3.jpg" alt="" />
+
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut3.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut8.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut8.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut3.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color5.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/style-cut2.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut-8.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm stylings all lazy">
-                    <img src="img/Portfolio/IMG_7905.jpg" alt="" />
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut-balayage18.jpg" alt="" />
+                </div>
+                <div class="tile scale-anm stylings all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut-balayage17.jpg" alt="" />
                 </div>
 
                 <!-- EXTENSIONS -->
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-gl6.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-gl6.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-gl7.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-gl7.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-gl.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-gl.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-gl2.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-gl2.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-gl4.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-gl4.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-gl3.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-gl3.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-gl1.png" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-gl1.png" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-hh1.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-hh1.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm extensions all lazy">
-                    <img src="img/Portfolio/extensions-hh2.jpg" alt="" />
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-hh2.jpg" alt="" />
+                </div>
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-hh3.jpg" alt="" />
+                </div>
+                <div class="tile scale-anm extensions all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/extensions-hh4.jpg" alt="" />
                 </div>
 
                 <!-- TREATMENTS -->
-                <div class="tile scale-anm treatments all lazy">
-                    <img src="img/Portfolio/treatment-cezanne.jpg" alt="" />
+                <div class="tile scale-anm treatments all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/treatment-cezanne.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm treatments all lazy">
-                    <img src="img/Portfolio/treatment-cezanne2.jpg" alt="" />
+                <div class="tile scale-anm treatments all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/treatment-cezanne2.jpg" alt="" />
                 </div>
-                <div class="tile scale-anm treatments all lazy">
-                    <img src="img/Portfolio/treatment-cezanne3.jpg" alt="" />
+                <div class="tile scale-anm treatments all b-lazy">
+                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/treatment-cezanne3.jpg" alt="" onclick="galleryToggle()" />
                 </div>
             </div>
+
 
 
             <div style="clear:both;"></div>
@@ -253,54 +385,65 @@
 
 
 
-    <section class="book-now" id="book-ashley">
-        <div class="locations-content">
-            <div class="left">
-                <div class="sf" id="booking-link">
-                    <h3 class="sf-header">@ Jackson Place Salon,<br> San Francisco</h3>
-                    <p class="sf-text">Monday - Wednesday</p>
+    <section id="book-ashley">
+        <div class="booking-container">
+
+            <div class="sf-book">
+
+                <span id="sf-span-book">
+                    <h3 class="header-loc-booking">@ Jackson Place Salon</h3>
+                    <h3 class="text-loc-booking"> San Francisco</h3>
+                    <p class="p-loc-booking">Monday - Wednesday</p>
+                </span>
+                <div id="btn-sf-book">
                     <form target="_blank" action="https://www.styleseat.com/m/book/v/PrestonHair-SF">
-                        <input id="btn-all" type="submit" value="Book in San Francsisco" />
+                        <input type="submit" value="Book in S.F." />
                     </form>
-
-                </div>
-            </div>
-            <div class="right">
-                <div class="marin" id="booking-link">
-                    <h3 class="marin-header">@ Avenue Salon,<br> San Anselmo</h3>
-                    <p class="marin-text">Thursday - Friday</p>
-                    <form target="_blank" class="marin-button" action="https://www.styleseat.com/PrestonHair-Marin">
-                        <input id="btn-all" type="submit" value="Book in Marin" />
                 </div>
 
             </div>
 
+            <div class="marin-book">
+
+                <span id="marin-span-book">
+                    <h3 class="header-loc-booking">@ Avenue Salon</h3>
+                    <h3 class="text-loc-booking"> San Anselmo</h3>
+                    <p class="p-loc-booking">Thursday - Friday</p>
+                </span>
+
+                <div id="btn-marin-book">
+                    <form target="_blank" action="https://www.styleseat.com/PrestonHair-Marin">
+                        <input type="submit" value="Book in Marin" /> </form>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p>* Weekends available upon request.</p>
+            </div>
 
         </div>
 
     </section>
 
-    <footer class="footer-container">
+    <footer>
         <div class="footer-content">
             <h2 class="footer-headline">Follow Ashley on Instagram</h2>
 
             <div class="social-footer">
 
                 <a href="http://instagram.com/Preston_Hair_Design">
-                <img id="insta-icon" src="img/insta-icon.svg" alt="Instagram icon link">
-              </a>
+                    <img id="insta-icon" src="img/insta-icon.svg" alt="Instagram icon link">
+                </a>
             </div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
-    </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
+
 
 </body>
 
 </html>
+<!-- endbuild -->

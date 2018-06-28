@@ -1,8 +1,14 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-var uglifycss = require('gulp-uglifycss');
+const uglifycss = require('gulp-uglifycss');
 const cssnano = require('gulp-cssnano');
+const useref = require('gulp-useref');
+var gulpIf = require('gulp-if');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+// const minifier = require('html-minifier')
+
 
 gulp.task('default', defaultTask);
 
@@ -12,26 +18,35 @@ function defaultTask(done) {
 }
 
 gulp.task('imageMin', () =>
-    gulp.src('img/Portfolio/final/*')
+    gulp.src('img/CPportfolio/Portfolio/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/images/cp-port'))
 );
-// gulp.task('uglifycss', function() {
-//   gulp.src('src/css/*.css')
-//   .pipe(uglify())
-//   .pipe(gulp.dest('dist/css'))
-// });
-gulp.task('css', function () {
-  gulp.src('./css/*.css')
-    .pipe(uglifycss({
-      "maxLineLen": 80,
-      "uglyComments": true
-    }))
-    .pipe(gulp.dest('./dist/'));
+
+gulp.task('autoprefixer', () =>
+  gulp.src('css/*.css')
+  .pipe('gulp-autoprefixer'('css/*.css'))
+  .pipe(gulp.dest('dist/css'))
+);
+
+gulp.task('useref', function(){
+  return gulp.src('*.html')
+    .pipe(useref())
+    .pipe(gulpIf('js/*.js', uglify()))
+    .pipe(gulp.dest('dist/js'))
+    // Minifies only if it's a CSS file
+    .pipe(gulpIf('css/*.css', cssnano()))
+    .pipe(gulp.dest('dist/css'));
 });
-// gulp.task('minify', function(){
-//   gulp.src('src/js/*.js')
-//   .pipe(uglify())
-//   .pipe(gulp.dest('dist/js'))
-//
-// });
+
+gulp.task('watch', function(){
+  gulp.watch('index.html', ['imageMin']); 
+  // Other watchers
+  gulp.watch('css/main.css', ['gulp-autoprefixer','cssnano',]);
+ // gulp.watch(useref,'js/main.js' []); 
+ gulp.watch('files-to-watch', ['tasks', 'to', 'run']); 
+});
+
+
+
+//gulp.task('deploySite', []

@@ -4,6 +4,8 @@
   "description": "Initial package management for Ashley's website and my own edification.",
   "main": "jquery-3.2.1.js",
   "dependencies": {
+    "@material/button": "^0.35.0",
+    "blazy": "^1.8.2",
     "contentful": "^5.0.5",
     "cssnano": "^3.10.0",
     "gulp-cssnano": "^2.1.2",
@@ -18,8 +20,10 @@
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-postcss": "^0.9.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
     "gulp-imagemin": "^4.1.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4"
   },
   "scripts": {
     "test": "test"
