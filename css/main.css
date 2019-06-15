@@ -1,0 +1,1717 @@
+<!-- build:css Ashley-Profesional-Site/css/main-min.css -->
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    background-color: white;
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    width: 85%;
+    height: 2px;
+    border: 0;
+    
+    margin: 5em auto;
+    padding: 0;
+    box-shadow: 0 0px 28px rgba(118, 61, 198, 0.85), 0 10px 10px rgba(118, 61, 198, 0.22); */
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Corey Written Sections
+   ========================================================================== */
+
+
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* COLORS */
+
+:root {
+    --main-color: #763dc6;
+    --secondary-bg-color: #c960f5;
+    --comp-color: #ffec3e;
+    --transparency-main: rgba(118, 61, 198, 0.75);
+    --transparency-secondary: rgba(200, 96, 245, 0.75);
+    /* FONTS */
+    --headline-font:"Kaushan Script", "San Serif";
+    --secondary-font: "Open Sans", "Arial";
+}
+
+/* ==========================================================================
+  WILDCARD and Structural Content
+  ========================================================================== */
+
+.site {
+    background-color: #eeeeee;
+
+    
+    /*overflow: scroll;*/
+}
+
+/* 
+/* CLOSE OF MEDIA QUERY     */
+
+/* ==========================================================================
+   ELEMENTS
+   ========================================================================== */
+
+li {
+    list-style: none;
+    margin: 20px 0;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+h3 {
+    color: white;
+
+}
+
+a {
+    font-family: var(--secondary-font);
+    color: black;
+    padding-right: 55px;
+    padding-left: 55px;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    /* vertical-align: middle; */
+    height: auto;
+    font-weight: normal;
+}
+
+/* CLASSES */
+
+.splash {
+    background-attachment: fixed;
+    /* background-size: cover; */
+    /* background-color: #763dc6;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23763dc6' cx='50' cy='0' r='50'/%3E%3Cg fill='%237a3fc8' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%237e40cb' cx='50' cy='100' r='50'/%3E%3Cg fill='%238342cd' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%238744d0' cx='50' cy='200' r='50'/%3E%3Cg fill='%238b45d2' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%238f47d4' cx='50' cy='300' r='50'/%3E%3Cg fill='%239349d7' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23974bd9' cx='50' cy='400' r='50'/%3E%3Cg fill='%239b4cdb' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a04ede' cx='50' cy='500' r='50'/%3E%3Cg fill='%23a450e0' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a852e2' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ac53e5' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b055e7' cx='50' cy='700' r='50'/%3E%3Cg fill='%23b457e9' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b859ec' cx='50' cy='800' r='50'/%3E%3Cg fill='%23bd5bee' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c15cf0' cx='50' cy='900' r='50'/%3E%3Cg fill='%23c55ef3' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c960f5' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E"); */
+
+background-size: contain;
+background-position: center;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(var(--transparency-main)),
+            to(var(--transparency-secondary))
+        ),
+        url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23763dc6' fill-opacity='0.41' fill-rule='evenodd'/%3E%3C/svg%3E");,
+        url("/Users/corey/Desktop/Dev/Portfolio/Ashley-Website/Ashley-Profesional-Site/img/ash-pic.jpg");
+}
+
+
+/* .section-transition {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+} */
+#right-arrow-id {
+    margin-top: 25em;
+    right: 0;
+}
+.right-arrow {
+    width: 150px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    z-index: 12;
+    -webkit-animation-name: bounce-right;
+    animation-name: bounce-right;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes bounce-right {
+    from {
+        -webkit-transform: translatex(0);
+        transform: translatex(0);
+    }
+    to {
+        -webkit-transform: translatex(10px);
+        transform: translatex(10px);
+    }
+}
+
+@keyframes bounce-right {
+    from {
+        -webkit-transform: translatex(0);
+        transform: translatex(0);
+    }
+    to {
+        -webkit-transform: translatex(10px);
+        transform: translatex(10px);
+    }
+}
+.splash{
+    height:100vh;
+}
+
+
+.location-headers::before {
+    display:contents;
+    content:"@ ";
+}
+
+
+.scheduler-btn {
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 2px solid;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: black;
+    border-radius: 25px;
+    background-size: 200% auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -o-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: linear-gradient(
+        to right,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    text-align: center;
+}
+
+.scheduler-btn:hover {
+    background-position: right center;
+    color: var(--comp-color);
+    background-position: top;
+    -webkit-box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.75);
+    box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.75);
+}
+
+.splash-headline{
+    position:absolute;
+    -ms-transform: skewY(-15deg);
+    /* IE 9 */
+    -webkit-transform: skewY(-15deg);
+    /* Safari */
+    transform: skewY(-15deg);
+color: var(--comp-color);
+    font-family: "Kaushan Script";
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.9), 0px 8px 13px rgba(0, 0, 0, 0.5),
+                0px 18px 23px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+#topnav{
+    padding-top:1em;
+    color: black;
+    background-color: transparent;
+    display: block;
+    /* width:100vw; */
+    /* height:150px; */
+    text-align: center;
+}
+*:focus {
+    outline: 1;
+}
+
+/* Splash header */
+
+
+header {
+  display: flex;
+  height: 100vh;
+}
+
+header {
+    filter:grayscale;
+    background-image: url('../img/ash-pic.jpg');
+    background-size: cover;
+    background-blend-mode: saturation;
+
+    padding: 2rem 0;
+    color: #fff;
+    text-shadow: 0px 1px 6px rgba(0,0,0,0.6);
+    
+  }
+  h1 {
+    -ms-transform: skewY(-15deg);
+    /* IE 9 */
+    -webkit-transform: skewY(-15deg);
+    /* Safari */
+    transform: skewY(-15deg);
+  color: var(--comp-color);
+    font-family: "Kaushan Script";
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.9), 0px 8px 13px rgba(0, 0, 0, 0.5),
+                0px 18px 23px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin: auto;
+    line-height: 1.1em;
+    font-size: 2rem;
+    @media (min-width: 500px) {
+      font-size: 4rem;
+    }
+  }
+  
+.location-headers{
+    font-family: kaushan script;
+    color: var(--comp-color);
+    display: block;
+    margin: auto;
+    margin-left: 15px;
+    font-size: 2rem;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+
+/* SERVICES SECTION */
+
+.services {
+    background-color: #eeeeee;
+    position: relative;
+    font-family: "Open Sans";
+    color: black;
+}
+.services-flex-boxes h3 {
+    font-size: 2rem;
+}
+
+.services-content {
+    /* padding-bottom: 50px; */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 50px;
+
+    
+}
+
+.services-title {
+    display: block;
+    margin: auto;
+    font-family: var(--headline-font);
+    font-size: 2em;
+    color: var(--main-color);
+    font-family: "Kaushan Script";
+    letter-spacing: 0.4rem;
+   
+}
+
+#testimonials{
+    margin-left:10%;
+    margin-right:10%;
+}
+.testimonial-title{
+    display: block;
+    font-family: var(--headline-font);
+    font-size: 2em;
+    color: var(--main-color);
+    font-family: "Kaushan Script";
+    letter-spacing: 0.4rem; 
+}
+
+.services-intro {
+    display: block;
+    padding-bottom: 25px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-family: var(--secondary-font);
+    text-align: justify;
+    color: #222;
+}
+
+
+#cut-content{
+    display:inline-block;
+    
+}
+#cut-card,
+#extensions-card
+ {
+
+    border-bottom: 2em solid #763dc6;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* background-image: -webkit-radial-gradient(center, circle, #f02fc2, #6094ea);
+    background-image: -o-radial-gradient(center, circle, #f02fc2, #6094ea);
+    background-image: radial-gradient(circle at center, #f02fc2, #6094ea); */
+    
+  background-color: #eeeeee;
+    -webkit-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+         -o-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    /* overflow: hidden; */
+  
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.22);
+    box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.22);
+}
+#extensions-card
+ {
+     margin-bottom:1em;
+ }
+
+#treatments-card {
+    border-bottom: 2em solid #763dc6;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  background-color: #eeeeee;
+    -webkit-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+         -o-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.22);
+    box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.22);
+
+}
+
+
+.services-cards-all{
+    display:flex;
+    flex-direction: column;
+    align-self: auto;
+}
+
+#cut-card{
+    display: inline-block;
+    /* position: inline-block; */
+}
+
+
+#cut-card h3,
+#extensions-card h3,
+#treatments-card h3
+{
+    display:inline-block;
+    text-decoration: underline;
+    font-size: 3rem;
+    color: #222;
+    text-align: center;
+    width:100%;
+    margin-top: -0.15em;
+   
+
+}
+
+
+#cut-card {
+   
+    /* margin-left:1em;
+    margin-top:1em;
+    width: 15%; */
+
+}
+
+.cut-card-icon{
+    width:25%;
+    height:100%;
+    display: block;
+    margin:auto;
+}
+
+
+.flex-container-styling {
+    /* padding: 0; */
+    margin: 20px;
+    list-style: none;
+    align-items: baseline;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  .flex-item {
+    /* background-color: #763dc6; */
+    /* padding: 50px; */
+    width: 200px;
+    margin: 20px;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    /* flex-grow: 2; */
+    /* line-height: 55px; */
+    color: #222;
+    /* font-weight: bold; */
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  #cut-content  svg{
+    width: 15%;
+    display: block;
+    margin: auto;
+    
+    margin-top: 1.55em;
+    /* filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(12px 12px 4px var(--transparency-main));
+    filter: drop-shadow(12px 12px 4px var(--transparency-main)); */
+}
+
+#extensions-content  svg{
+    width: 15%;
+    display: block;
+    margin: auto;
+    
+    margin-top: 1.55em;
+    /* filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(12px 12px 4px var(--transparency-main));
+    filter: drop-shadow(12px 12px 4px var(--transparency-main)); */
+}
+#treatments-content svg{
+    height:220px;
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+    margin-top: 1.55em;
+    /* filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(12px 12px 4px var(--transparency-main));
+    filter: drop-shadow(12px 12px 4px var(--transparency-main)); */
+}
+
+.flex-item-intro {
+    width: 100%;
+    height: 75px;
+    margin: 20px;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    /* flex-grow: 2; */
+    /* line-height: 55px; */
+    color: #222;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    text-align: center;
+    flex-basis: 2;
+}
+
+
+
+#btn-marin-book:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--comp-color);
+    -webkit-box-shadow: 0 14px 28px #763dc640,
+        0 10px 10px rgba(118, 61, 198, 0.75);
+    box-shadow: 0 14px 28px hsla(265, 55%, 51%, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.75);
+}
+
+
+
+/* LOCATIONS*/
+@media screen and (max-width: 550px) {
+
+    .testimonials-title{
+        display: block;
+        margin-left:10%;
+        margin-right:10%;
+        font-family: var(--headline-font);
+        font-size: 2em;
+        color: var(--main-color);
+        font-family: "Kaushan Script";
+        letter-spacing: 0.4rem; 
+    }
+
+    .locations-container {
+ 
+        color:white;
+        height:100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 5em;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+                background: -webkit-gradient(linear,left top, right top,from(var(--main-color)), to(#c960f5));
+                background: -webkit-linear-gradient(left,var(--main-color), #c960f5);
+                background: -o-linear-gradient(left,var(--main-color), #c960f5);
+                background: linear-gradient(to right,var(--main-color), #c960f5);
+        
+    }
+
+    .splash-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+
+    .scheduler-btn {
+        font-family: "Open Sans";
+        font-weight: normal;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        line-height: normal;
+        padding: 0.5rem 1rem;
+        /* margin: 0; */
+        margin-left:2.5%;
+        text-align: center;
+        width:90%;
+        height: auto;
+        border: 2px solid;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        color: white;
+        border-radius: 25px;
+        background-size: 200% auto;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(#f02fc2),
+            color-stop(51%, #6094ea),
+            to(#f02fc2)
+        );
+        background-image: -webkit-linear-gradient(
+            left,
+            #f02fc2 0%,
+            #6094ea 51%,
+            #f02fc2 100%
+        );
+        background-image: -o-linear-gradient(
+            left,
+            #f02fc2 0%,
+            #6094ea 51%,
+            #f02fc2 100%
+        );
+        background-image: -webkit-gradient(
+            linear,
+            left top, right top,
+            from(#f02fc2),
+            color-stop(51%, #6094ea),
+            to(#f02fc2)
+        );
+        background-image: linear-gradient(
+            to right,
+            #f02fc2 0%,
+            #6094ea 51%,
+            #f02fc2 100%
+        );
+        text-align: center;
+    }
+
+    .menu-hamburger{
+        width:50px;
+        position:absolute;
+        top:-5;
+        left:0;
+    }
+
+        /* Hide large format menu */
+        #topnav{
+            display:none;
+        }
+        /* Mobile Menu */
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color:#c960f5; /* Black fallback color */
+    background-color: rgba(200, 96, 245, 0.75); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    font-family: "Open Sans";
+    /* text-decoration: none; */
+    margin-top:1em;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: var(--comp-color);
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+    .splash-header {
+  
+        color: var(--comp-color);
+            font-family: "Kaushan Script";
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 0.4rem;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            background: linear-gradient(195deg, #f02fc2, #6094ea, #c960f5, #763dc6);
+            background-size: 800% 800%;
+            -webkit-animation: ash-hero-gradient-shift 30s ease infinite;
+            -moz-animation: ash-hero-gradient-shift 30s ease infinite;
+            animation: ash-hero-gradient-shift 30s ease infinite;
+            text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+                0px 18px 23px rgba(0, 0, 0, 0.1);
+        
+            -ms-transform: skewY(-15deg);
+            /* IE 9 */
+            -webkit-transform: skewY(-15deg);
+            /* Safari */
+            transform: skewY(-15deg);
+            text-rendering: optimizeLegibility;
+        }
+        
+
+
+
+    /*Beginning of Locations chevron  */
+    .locations-container {
+        height:100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+ #location-anchor-button {
+        background-color: red;
+        background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    }
+    
+    .sf {
+        background: -webkit-gradient(linear,left top, right top,from(var(--main-color)), to(#c960f5));
+        background: -webkit-linear-gradient(left,var(--main-color), #c960f5);
+        background: -o-linear-gradient(left,var(--main-color), #c960f5);
+        background: linear-gradient(to right,var(--main-color), #c960f5);
+
+        
+    }
+
+
+    .p-testimonial{
+        line-height:1.5rem;
+        font-size: 1.35rem;
+        margin-top:5.5em;
+        font-family: "Open Sans";
+        text-align: justify;
+    }
+    .name-testimonial{
+        font-style: italic;
+        font-size: 1.35rem;
+        font-family: "Kaushan Script";
+        letter-spacing: 0.2rem;
+
+    }
+
+
+    .marin {
+        background: -webkit-gradient(linear, right top, left top, from(var(--main-color)), to(#c960f5));
+        background: -webkit-linear-gradient(right, var(--main-color), #c960f5);
+        background: -o-linear-gradient(right, var(--main-color), #c960f5);
+        background: linear-gradient(to left, var(--main-color), #c960f5);
+
+        /* line-height: 15em; */
+    }
+
+
+
+    /* End of Locations chevron */
+
+    /* beginning of booking chevron */
+    .booking-container {
+        background-color: #eeeeee;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    
+    .footer-headline{
+        margin-top:3em;
+    }
+
+    /* END of Max 550 PX */
+}
+
+@media screen and (min-width: 551px) {
+    .splash-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+   
+    .locations-container {
+ 
+        color:white;
+        height:100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 5em;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+                background: -webkit-gradient(linear,left top, right top,from(var(--main-color)), to(#c960f5));
+                background: -webkit-linear-gradient(left,var(--main-color), #c960f5);
+                background: -o-linear-gradient(left,var(--main-color), #c960f5);
+                background: linear-gradient(to right,var(--main-color), #c960f5);
+        
+    }
+    
+    #location-anchor-button {
+        background-color: red;
+    }
+    
+
+    
+    .splash-header {
+        /* margin:auto;
+        position: absolute;
+        left: 40%;
+        top: 40%; */
+        -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+        color: var(--comp-color);
+            font-family: "Kaushan Script";
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 0.4rem;
+            -ms-flex-line-pack: center;
+            align-content: center;
+        
+            /* text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+                0px 18px 23px rgba(0, 0, 0, 0.1); */
+
+            text-rendering: optimizeLegibility;
+        }
+        
+
+    #myNav{
+        display:none;
+    }
+    .menu-hamburger{
+        display:none;
+    }
+    .locations-container {
+        
+        color:white;
+        height:100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 5em;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+                background: -webkit-gradient(linear,left top, right top,from(var(--main-color)), to(#c960f5));
+                background: -webkit-linear-gradient(left,var(--main-color), #c960f5);
+                background: -o-linear-gradient(left,var(--main-color), #c960f5);
+                background: linear-gradient(to right,var(--main-color), #c960f5);
+               
+    }
+    .p-testimonial{
+        line-height:1.5rem;
+        font-size: 1.35rem;
+        margin-top:3.5em;
+        font-family: "Open Sans";
+        text-align: justify;
+        
+    }
+
+    .p-testimonial{
+        line-height:1.5rem;
+        font-size: 1.35rem;
+        margin-top:3.5em;
+        font-family: "Open Sans";
+        text-align: justify;
+    }
+    .name-testimonial{
+        margin-top:1em;
+        margin-left:2em;
+        margin-right:2em;
+        font-style: italic;
+        font-family: "Kaushan Script";
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        text-align: right;
+
+    }
+    .disclaimer {
+        display: block;
+        text-align: center;
+        font-family: "Open Sans";
+        margin-top:1em;
+    }
+
+
+    .sf,
+    .marin {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 50%;
+                flex: 0 1 50%;
+        text-align: center;
+        color: white;
+        height: 25em;
+    }
+    .sf {
+        background: -webkit-gradient(linear, left top, right top, from(#763dc6), to(#c960f5));
+        background: -webkit-linear-gradient(left, #763dc6, #c960f5);
+        background: -o-linear-gradient(left, #763dc6, #c960f5);
+        background: linear-gradient(to right, #763dc6, #c960f5);
+
+        /* line-height: 15em; */
+    }
+
+    .sf-span {
+        display: block;
+    }
+    #btn-sf-book {
+
+        /* position:relative; */
+    }
+
+    .marin {
+        background: -webkit-gradient(linear, right top, left top, from(#763dc6), to(#c960f5));
+        background: -webkit-linear-gradient(right, #763dc6, #c960f5);
+        background: -o-linear-gradient(right, #763dc6, #c960f5);
+        background: linear-gradient(to left, #763dc6, #c960f5);
+
+        /* line-height: 15em; */
+    }
+ 
+    /* begin booking chevron */
+
+    .booking-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: 20em;
+        /* margin-top:5em; */
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+    }
+    /* end of min-width: 551px query */
+}
+
+/*LOCATIONS END*/
+
+.work-content {
+    background-color: #eeeeee;
+    margin:auto;
+    width: 95%;
+    height: 100%;
+    overflow-x: hidden;
+    list-style: none;
+    -ms-box-orient: vertical;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: flex;
+}
+
+.work-header {
+    text-align: center;
+    display: block;
+    background-color: #eeeeee;
+    margin-top: 3em;
+    font-family: "Kaushan Script";
+    letter-spacing: 0.4rem;
+    font-size: 2em;
+    color: var(--main-color);
+
+}
+.disclaimer {
+    margin-left: 5em;
+}
+
+
+#portfolio {
+    background-color: #eeeeee;
+    margin: 1rem 0;
+    margin-top: 200px;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+    overflow-x: scroll;
+}
+
+.tile {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.scale-anm {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.tile img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin-bottom: 1rem;
+    /* border-radius: 10px; */
+}
+
+.btn {
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 2px solid;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: white;
+    border-radius: 25px;
+    /* background: linear-gradient(to right, var(--main-color), var(--secondary-bg-color)) */
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--comp-color);
+    background-position: top;
+    -webkit-box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.75);
+    box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.75);
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--comp-color);
+    background-position: top;
+}
+
+.btn:focus {
+    outline: none;
+    border-color: var(--darken-2);
+    -webkit-box-shadow: 0 0 0 3px var(--darken-3);
+    box-shadow: 0 0 0 3px var(--darken-3);
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* END OF GALLERY */
+
+.footer-content {
+    background-color: #7b43c9;
+    width: 100%;
+    margin-top: 10em;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top:20em;
+    padding-top:2em;
+}
+
+/* IDs */
+
+#btn-all:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--comp-color);
+    -webkit-box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.75);
+    box-shadow: 0 14px 28px rgba(118, 61, 198, 0.25),
+        0 10px 10px rgba(118, 61, 198, 0.75);
+}
+
+#btn-extensions:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--comp-color);
+}
+
+#btn-styling:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--comp-color);
+}
+
+#btn-treatments:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--comp-color);
+}
+
+.btn-1 {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -o-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: linear-gradient(
+        to right,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+}
+
+#btn-all {
+    /* background: linear-gradient(to left, #F02FC2, #6094EA); */
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 2px solid;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: white;
+    border-radius: 25px;
+    background-size: 200% auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -o-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: linear-gradient(
+        to right,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+#btn-extensions {
+    background-size: 200% auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -o-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: linear-gradient(
+        to right,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+}
+
+#btn-styling {
+    background-size: 200% auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -o-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: linear-gradient(
+        to right,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+}
+
+#btn-treatments {
+    background-size: 200% auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -o-linear-gradient(
+        left,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(#f02fc2),
+        color-stop(51%, #6094ea),
+        to(#f02fc2)
+    );
+    background-image: linear-gradient(
+        to right,
+        #f02fc2 0%,
+        #6094ea 51%,
+        #f02fc2 100%
+    );
+}
+
+#hero {
+    margin: auto;
+}
+
+#mobile-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    /*margin:auto;*/
+}
+
+.footer-headline {
+    color: var(--comp-color);
+    display: block;
+    margin: auto;
+    margin-left: 15px;
+    font-size: 2rem;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+
+.social-footer {
+    margin-top: 5em;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+         -o-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    font-family: "sans-serif";
+    /* background: linear-gradient(center, rgb(198, 61, 61), #C960F5); */
+}
+
+.footer-headline {
+    font-family: "Kaushan Script";
+}
+
+#insta-icon {
+    fill: var(--comp-color);
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: 0;
+    display: block;
+    margin-top:-1em;
+}
+.social-footer:hover {
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(12px 12px 4px black);
+    filter: drop-shadow(12px 12px 4px black);
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (-o-min-device-pixel-ratio: 5/4),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
