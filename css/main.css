@@ -524,7 +524,7 @@ header {
 {
     display:inline-block;
     text-decoration: underline;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #222;
     text-align: center;
     width:100%;
@@ -1130,7 +1130,7 @@ header {
 
 }
 .disclaimer {
-    margin-left: 5em;
+    text-align:center;
 }
 
 
