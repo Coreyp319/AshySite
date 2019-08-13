@@ -137,7 +137,7 @@ li {
 
 ul {
     list-style: none;
-    margin-bottom: 10px;
+    margin:0;
     text-align: left;
 }
 
@@ -172,14 +172,13 @@ a {
     
 
 
-    background-attachment: fixed;
-    /* background-size: cover; */
-    /* background-color: #763dc6;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23763dc6' cx='50' cy='0' r='50'/%3E%3Cg fill='%237a3fc8' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%237e40cb' cx='50' cy='100' r='50'/%3E%3Cg fill='%238342cd' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%238744d0' cx='50' cy='200' r='50'/%3E%3Cg fill='%238b45d2' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%238f47d4' cx='50' cy='300' r='50'/%3E%3Cg fill='%239349d7' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23974bd9' cx='50' cy='400' r='50'/%3E%3Cg fill='%239b4cdb' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a04ede' cx='50' cy='500' r='50'/%3E%3Cg fill='%23a450e0' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a852e2' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ac53e5' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b055e7' cx='50' cy='700' r='50'/%3E%3Cg fill='%23b457e9' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b859ec' cx='50' cy='800' r='50'/%3E%3Cg fill='%23bd5bee' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c15cf0' cx='50' cy='900' r='50'/%3E%3Cg fill='%23c55ef3' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c960f5' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E"); */
+    /* background-attachment: fixed; */
 
-background-size: contain;
-background-position: center;
-    background-image: url("/Users/corey/Desktop/Dev/Portfolio/Ashley-Website/Ashley-Profesional-Site/img/ash-pic.jpg");
+/* background-size: contain; */
+background-position: left center;
+
+    background-image: url("/img/Ash-hero-image-resized-optimized.jpg");
+    background-size: cover;
 }
 
 
@@ -373,9 +372,11 @@ header {
 }
 
 header {
-    filter:grayscale;
-    background-image: linear-gradient(to bottom, rgba(118, 61, 198, 0.5) 0%,rgba(201, 96, 245, 0.5) 100%),url('../img/ash-pic.jpg');
+
+    background-image: linear-gradient(to bottom, rgba(118, 61, 198, 0.5) 0%,rgba(201, 96, 245, 0.5) 100%),url('/img/Ash-hero-image-resized-optimized.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
     /* background-blend-mode: saturation; */
     padding: 2rem 0;
     color: #fff;
@@ -383,15 +384,7 @@ header {
     
   }
 
-  header {
-    background-color: #563d7c;
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    /* z-index: -1; */
-    opacity: 1;
 
-  }
   h1 {
     -ms-transform: skewY(-15deg);
     /* IE 9 */
@@ -415,11 +408,14 @@ header {
       font-size: 4rem;
     }
   }
+
+  .locations-item {
+      flex-direction: column;
+  }
   
 .location-headers{
     font-family: kaushan script;
     color: var(--comp-color);
-    display: block;
     margin: auto;
     margin-left: 15px;
     font-size: 2rem;
@@ -655,7 +651,10 @@ header {
     flex-basis: 2;
 }
 
-
+#topnav{
+background-color:hsla(265, 55%, 51%, 0.25),
+0 10px 10px rgba(118, 61, 198, 0.75);
+}
 
 #btn-marin-book:hover {
     background-position: right center;
@@ -965,6 +964,7 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        flex-direction: column; 
         text-align: center;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
