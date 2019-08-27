@@ -76,13 +76,39 @@ a {
     font-weight: normal;
 }
 
-.header-h1-APHD-div{
+#header-h1-APHD{
+
     display:flex;
     align-content: flex-end;
 flex-direction: column;
+    color: var(--comp-color);
+            font-family: "Kaushan Script";
+            font-size: 1.5rem;
+            letter-spacing: 0.4rem;
+            -ms-flex-line-pack: center;
+
+            text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+                0px 18px 23px rgba(0, 0, 0, 0.1);
+            text-rendering: optimizeLegibility;
+height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(118, 61, 198, 0.5) 0%,rgba(201, 96, 245, 0.5) 100%),url('/img/Ash-hero-image-resized-optimized.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    /* background-blend-mode: saturation; */
+    /* padding: 2rem 0; */
+    color: #fff;
+    text-shadow: 0px 1px 6px rgba(0,0,0,0.6);
+    
+
 }
 
-
+#header-h1-APHD h1 {
+    color:#ffec3e;
+    height:100%;
+    display: flex;
+    align-items: flex-end;
+}
 
 /* CLASSES */
 
@@ -290,26 +316,21 @@ nav a{
 }
 
 /* Splash header */
+/* 
 
-.header-h1-APHD{
-display:flex;
-align-content: flex-end;
-
-
-}
 
 header {
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(118, 61, 198, 0.5) 0%,rgba(201, 96, 245, 0.5) 100%),url('/img/Ash-hero-image-resized-optimized.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position:center;
     /* background-blend-mode: saturation; */
     /* padding: 2rem 0; */
     color: #fff;
     text-shadow: 0px 1px 6px rgba(0,0,0,0.6);
     
-  }
+  }*/
 
  
   
@@ -743,7 +764,7 @@ background-color:hsla(265, 55%, 51%, 0.25),
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: var(--comp-color);
+    color:#c960f5;
 }
 
 /* Position the close button (top right corner) */
@@ -1576,14 +1597,12 @@ form {
     <!-- End of mobile menu -->
 
 
-    <header>
-        <div class="header-h1-APHD">
-            <div class="header-h1-APHD-div">
+        <div id="header-h1-APHD">
+    
                 <h1>Ashley Preston
                     <br>Hair Design</h1>
-            </div>
         </div>
-    </header>
+
 
 
 
@@ -1606,7 +1625,7 @@ form {
             <div class="services-cards-all">
                 <div id="cut-card">
 
-                    <div id="cut-content">
+                    <divf id="cut-content">
                         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 128 128" class="cut-card-icon">
                             <g>
                                 <path fill="#FFEC3E"
@@ -1781,9 +1800,6 @@ form {
                     <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut13.jpg" alt="" />
                 </div>
                 <div class="tile scale-anm stylings all b-lazy">
-                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut12.jpg" alt="" />
-                </div>
-                <div class="tile scale-anm stylings all b-lazy">
                     <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut11.jpg" alt="" />
                 </div>
                 <div class="tile scale-anm stylings all b-lazy">
@@ -1801,9 +1817,6 @@ form {
                 </div>
                 <div class="tile scale-anm stylings all b-lazy">
                     <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-color-cut-8.jpg" alt="" />
-                </div>
-                <div class="tile scale-anm stylings all b-lazy">
-                    <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut-balayage18.jpg" alt="" />
                 </div>
                 <div class="tile scale-anm stylings all b-lazy">
                     <img src="img/handtinytrans.gif" data-src="img/Portfolio/style-cut-balayage17.jpg" alt="" />
