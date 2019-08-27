@@ -64,17 +64,49 @@ h3 {
 
 }
 
-a {
-    font-family: var(--secondary-font);
+
+
+#nav a {
+    font-family: var(--headline-font);
+    letter-spacing: 0.1rem;
     color: black;
     padding-right: 55px;
     padding-left: 55px;
-    text-decoration: none;
     text-rendering: optimizeLegibility;
-    /* vertical-align: middle; */
     height: auto;
     font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
 }
+
+#nav a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: var(--comp-color);
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#nav a:hover:before, #nav a:focus:before, #nav a:active:before {
+  left: 0;
+  right: 0;
+} 
+
+ 
+
 
 #header-h1-APHD{
 
@@ -286,19 +318,19 @@ color: var(--comp-color);
 }
 
 
-nav a{
+#nav a{
 
         padding: 1rem 2rem;
 
   } 
 
-  .nav a {
+  #nav a {
     text-decoration: none;
     display: block;
     padding: 1em;
   }
 
-.nav{
+#nav{
 
     height:50px;
     color: black;
@@ -319,19 +351,6 @@ nav a{
 /* Splash header */
 /* 
 
-
-header {
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(118, 61, 198, 0.5) 0%,rgba(201, 96, 245, 0.5) 100%),url('/img/Ash-hero-image-resized-optimized.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    /* background-blend-mode: saturation; */
-    /* padding: 2rem 0; */
-    color: #fff;
-    text-shadow: 0px 1px 6px rgba(0,0,0,0.6);
-    
-  }*/
 
  
   
@@ -765,7 +784,7 @@ background-color:hsla(265, 55%, 51%, 0.25),
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color:#c960f5;
+    color:var(--comp-color);
 }
 
 /* Position the close button (top right corner) */
@@ -1011,15 +1030,8 @@ background-color:hsla(265, 55%, 51%, 0.25),
         text-align: right;
 
     }
-    .disclaimer {
-        display: block;
-        text-align: center;
-        font-family: "Open Sans";
-        margin-top:1em;
-    }
 
 
-    .sf,
     .marin {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 50%;
@@ -1028,22 +1040,7 @@ background-color:hsla(265, 55%, 51%, 0.25),
         color: white;
         height: 25em;
     }
-    .sf {
-        background: -webkit-gradient(linear, left top, right top, from(#763dc6), to(#c960f5));
-        background: -webkit-linear-gradient(left, #763dc6, #c960f5);
-        background: -o-linear-gradient(left, #763dc6, #c960f5);
-        background: linear-gradient(to right, #763dc6, #c960f5);
 
-        /* line-height: 15em; */
-    }
-
-    .sf-span {
-        display: block;
-    }
-    #btn-sf-book {
-
-        /* position:relative; */
-    }
 
     .marin {
         background: -webkit-gradient(linear, right top, left top, from(#763dc6), to(#c960f5));
@@ -1172,11 +1169,7 @@ background-color:hsla(265, 55%, 51%, 0.25),
         0 10px 10px rgba(118, 61, 198, 0.75);
 }
 
-a:hover {
-    cursor: pointer;
-    color: var(--comp-color);
-    background-position: top;
-}
+
 
 .btn:focus {
     outline: none;
@@ -1563,7 +1556,7 @@ form {
 
     <div>
         <div id="topnav">
-            <ul class="nav">
+            <ul id="nav">
                 <li><a href="index.html#Services">Services</a></li>
                 <li><a href="index.html#testimonials">Testimonials</a></li>
                 <li><a href="index.html#portfolio">Work</a></li>
@@ -1891,9 +1884,9 @@ form {
                 <p>Primary Location</p>
 
 
-                <a class="btn" href="https://www.Styleseat.com/PrestonHair-StHelena">Book in St. Helena
-                </a>
 
+
+                <a class="btn fil-cat" id="btn-all" type="button" href="https://www.Styleseat.com/PrestonHair-StHelena">Book in St. Helena</a>
             </div>
 
             <div>
@@ -1901,9 +1894,7 @@ form {
                 <h3>San Anselmo</h3>
                 <p>Limited Availability</p>
 
-
-                <a href="https://www.styleseat.com/PrestonHair-Marin" class="btn">
-                    Book in Marin</a>
+                <a class="btn fil-cat" id="btn-all" type="button" href="https://www.styleseat.com/PrestonHair-Marin">Book in Marin</a>
 
             </div>
 
