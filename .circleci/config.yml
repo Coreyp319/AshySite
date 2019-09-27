@@ -6,3 +6,4 @@
      steps:
        - checkout
        - run: echo "A first hello"
+store_test_results
