@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
 name: Compress images
-on: pull_request
+on: push
 jobs:
   build:
     name: calibreapp/image-actions
