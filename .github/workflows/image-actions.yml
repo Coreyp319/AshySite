@@ -1,3 +1,4 @@
+on: push
 jpeg:
   quality: 80
 png:
