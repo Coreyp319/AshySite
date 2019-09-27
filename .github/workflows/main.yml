@@ -1,13 +1,8 @@
-name: CI
+workflow "New workflow" {
+  on = "push"
+  resolves = ["ESLint"]
+}
 
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v1
-        - name: ESLint checks
-  uses: gimenete/eslint-action@1.0
+action "ESLint" {
+  uses = "stefanoeb/eslint-action@master"
+}
