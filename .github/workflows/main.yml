@@ -2,7 +2,7 @@ name: Compress images
 on: push
 jobs:
   build:
-    name: calibreapp/image-actions
+    name: calibre/image-actions
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
