@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: calibre/image-actions
-        uses: docker://calibre/image-actions
+        uses: docker://AshySite/calibre/image-actions
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
