@@ -5,10 +5,10 @@ jobs:
     name: calibre/image-actions
     runs-on: ubuntu-latest
     steps:
+            - name: image-actions
+  uses: calibreapp/image-actions@1.0.0
       - uses: actions/checkout@master
       - name: calibreapp/image-actions
         uses: docker://calibreapp/github-image-actions
-        - name: image-actions
-  uses: calibreapp/image-actions@1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
