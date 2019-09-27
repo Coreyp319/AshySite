@@ -2,6 +2,8 @@ name: CI
 
 on:
   push:
+  paths:
+    - '*'        # Run workflow for all file paths
     branches:
     - master
 jobs:
