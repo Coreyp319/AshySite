@@ -5,8 +5,8 @@ jobs:
     name: calibre/image-actions
     runs-on: ubuntu-latest
     steps:
-            - name: image-actions
-  uses: calibreapp/image-actions@1.0.0
+      - name: image-actions
+      uses: calibreapp/image-actions@1.0.0
       - uses: actions/checkout@master
       - name: calibreapp/image-actions
         uses: docker://calibreapp/github-image-actions
