@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --main-bg-color: lavender;
+            --main-font-color: rebeccapurple;
+            --accent-color: #7851a9;
+            --accent-hover: yellow;
+        }
+
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-font-color);
+
+
+        }
+
+        a[href] {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a[href]:hover {
+            color: var(--accent-hover);
+        }
+
+        header {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+
+        }
+
+        ul {
+            padding-left: 0;
+
+            list-style-type: none;
+        }
+
+        #nav li {
+            display: inline-block;
+            padding-right: 1em;
+        }
+
+        #nav a::after {
+            display: inline-block;
+            color: #000;
+
+            font-size: 80%;
+            font-weight: bold;
+
+        }
+
+        #book {
+            display: flex;
+            place-items: center;
+            justify-content: center;
+        }
+
+        #book div {
+            align-self: center;
+        }
+
+        #services {
+            display: flex;
+            place-items: center;
+            justify-content: center;
+
+        }
+
+        section {
+            margin: 0 5em;
+        }
+
+        .visual {
+            max-width: 200px;
+            place-items: center;
+            aspect-ratio: 1 / 1;
+        }
+
+        .card {
+            width: clamp(23ch, 50%, 46ch);
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            padding: 1rem;
+            margin: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBXSPV6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html#Services">Services</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#portfolio">Work</a></li>
+            <li><a class="mdc-button" href="index.html#book">Book an Appointment</a></li>
+        </ul>
+    </nav>
+
+    <header id="Ash-Bio-Header">
+
+
+
+        <h1>Ashley Preston
+            Hair Design</h1>
+        <p>Master Hair Stylist</p>
+
+
+
+    </header>
+    <section>
+        <div id="book">
+            <div>
+
+                <h2>Saint Helena</h2>
+                <p>Primary Location</p>
+                <a class="btn fil-cat" id="btn-all" type="button"
+                    href="https://www.Styleseat.com/PrestonHair-StHelena">Book in St. Helena</a>
+            </div>
+            <div>
+                <h2>Marin County</h2>
+                <p>Limited Availability</p>
+
+                <a class="btn fil-cat" id="btn-all" type="button"
+                    href="https://www.styleseat.com/PrestonHair-Marin">Book in Marin</a>
+            </div>
+    </section>
+    <section>
+        <h2>Services</h2>
+        <p class="services-intro">Ashley offers a strong consultative approach, listening to the needs and desires
+            of each client so she can advise
+            them on how to achieve their best hair. She has mastered the art behind each hair type and texture so
+            that
+            she can teach her clientele to improve and maintain the health of their hair. </p>
+
+        <div id="services">
+            <div class="card">
+                <h1>Styling</h1>
+                <div class="visual"> <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                        <g>
+                            <path fill="#763DC6"
+                                d="M126.6 94.9c-.6-1-1.9-1.3-3-.9-8.1 3.5-14.4 1.4-16.2.7-.2-3.8-2.1-7.4-5.5-9.7-5.2-3.5-12-2.8-16.3 1.5L1.6 29c-.2-.1-.4-.1-.5.1-.4.6-.3 1.5.3 2L55 77.4c.8.7 1.9 1.1 3 1.1l9.6.1 15.5 11.1c-2.9 5.6-1.2 12.5 4.3 16.1 4.8 3.2 11.2 2.7 15.6-1 1.8-1.5 2.9-3.4 3.6-5.3 3.3 1.1 10.3 2.6 18.8-1.2.1 0 .1-.1.2-.1 1.3-.7 1.8-2.2 1-3.3zM60.5 75.5c-.5.6-1.2.9-2 .9-.6 0-1.2-.2-1.6-.6l-1.8-1.5c-1.1-.9-1.2-2.5-.3-3.6.9-1.1 2.5-1.2 3.6-.3l1.8 1.5c1 .9 1.2 2.5.3 3.6zm40 23.7c-2.2 3.2-6.6 3.9-9.8 1.8-3.2-2.2-4-6.5-1.8-9.7 2.2-3.2 6.6-3.9 9.8-1.8 3.2 2.2 4 6.6 1.8 9.7zm-39.4 2.6l-1.4-18.3h-1.6c-.7 0-1.4-.1-2.1-.2l1 18.9c-5.9 1.4-10.1 6.8-9.8 12.9.4 7 6.4 12.3 13.4 11.9 7-.4 12.4-6.3 12.1-13.3-.2-6.3-5.3-11.3-11.6-11.9zm-.7 19.7c-4 .2-7.3-2.8-7.5-6.7-.2-3.9 2.8-7.2 6.8-7.5 4-.2 7.3 2.8 7.5 6.7.2 3.9-2.8 7.3-6.8 7.5z" />
+                            <path fill="#763DC6"
+                                d="M64.3 65.5L53.6 2.3C53.5 1.5 52.8 1 52 1c-.2 0-.3.2-.3.3L54.8 59l9.5 6.5z" />
+                        </g>
+                    </svg></div>
+                <ul>
+                    <li>Women/Men's Haircuts</li>
+                    <!-- <li class="flex-item">Highlights: Face Frame, Partial/Full</li>
+            <li class="flex-item">Root Touch Up</li>
+            <li class="flex-item">Root Touch Up and Highlights</li>
+            <li class="flex-item">All Over Color</li>
+            <li class="flex-item">Balayage</li>
+            <li class="flex-item">Double Process</li>
+            <li class="flex-item">Color Correction</li>
+            <li class="flex-item">Gloss</li> -->
+                    <li>Dry Dusting</li>
+                    <li>Blowouts</li>
+                </ul>
+            </div>
+
+
+
+            <div class="card">
+                <h1>Treatment</h1>
+                <div class="visual"> <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <path fill="#FFEC3E"
+                            d="M50 89c-11.1 0-16.4-9-17.5-17.5-.3-2.3-2.3-3.9-4.6-3.9H9.7v-5h18.1c4.8 0 8.9 3.6 9.6 8.3.5 3 2.7 13.1 12.6 13.1 8.3 0 11.3-7.3 12.3-13.5.8-4.6 4.8-7.9 9.5-7.9h18.4v5H71.9c-2.3 0-4.2 1.6-4.6 3.8C65.3 82.8 59.2 89 50 89z" />
+                        <path fill="#FFEC3E" id="treatmentStroke"
+                            d="M55 42.4c.1-1.8.3-3.6.4-5.4.2-1.8.4-3.6.6-5.3.2-1.7.5-3.4.7-4.9.2-1.6.6-3 .8-4.4.3-1.3.6-2.6.8-3.7.3-1.1.5-2 .8-2.8.5-1.6.8-2.4.8-2.4s-.5.8-1.2 2.2c-.4.7-.8 1.6-1.3 2.6s-1 2.2-1.6 3.5c-.5 1.3-1.1 2.7-1.7 4.2-.6 1.5-1.1 3.1-1.7 4.8-.6 1.7-1.1 3.4-1.6 5.2l-1.5 5.4c-.4 1.8-.9 3.7-1.3 5.5-.4 1.8-.8 3.6-1.1 5.4-.3 1.8-.6 3.4-.9 5-.3 1.6-.5 3.2-.7 4.6-.1.8-.2 1.6-.3 2.3-2.3 1.6-3.8 4.2-3.8 7.1 0 4.8 3.9 8.6 8.6 8.6 4.8 0 8.6-3.9 8.6-8.6 0-2.8-1.4-5.3-3.5-6.9 0-.7-.1-1.4-.1-2.1-.1-1.3-.2-2.8-.2-4.3 0-1.6-.1-3.2-.1-4.9 0-1.7 0-3.5.1-5.3.2-1.8.4-3.6.4-5.4z" />
+                        <circle fill="#763DC6" class="right-bottom" cx="63" cy="50.9" r="3.6" />
+                        <circle fill="#763DC6" class="right-bottom" cx="62.6" cy="37.2" r="3.2" />
+                        <circle fill="#763DC6" class="right-bottom" cx="63.8" cy="24.6" r="2.5" />
+                        <circle fill="#763DC6" class="left-bottom" cx="42.4" cy="41.1" r="3.2" />
+                        <circle fill="#763DC6" class="left-bottom" cx="47.3" cy="28.4" r="2.5" />
+                        <circle fill="#763DC6" class="left-bottom" cx="37.6" cy="55.8" r="3.6" />
+                    </svg></div>
+
+                <ul>
+                    <li>Cezanne Keratin Treatments (non-toxic)</li>
+                    <li>Express Treatment </li>
+                    <li>Classic Treatment (long lasting)</li>
+                    <li>Cezanne Certified Instructor</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card">
+                <h1>Extensions</h1>
+                <div class="visual"> <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <path fill="#FFEC3E"
+                            d="M45.374 87.676h-.004l.002-3.556h.002c2.065 0 3.265-2.639 3.908-4.854 2.451-8.441.29-19.232-1.146-20.982a2.96 2.96 0 0 0-.151.168c-4.545 5.468-10.441 8.887-14.667 8.516-1.824-.162-3.28-1.047-4.101-2.491-1.032-1.819-1.564-4.456-2.078-7.004-.361-1.796-1.208-5.998-2.067-6.233-1.556-.426-3.231-1.849-4.173-3.539-.687-1.237-.881-2.458-.561-3.535.359-1.208 1.54-3.37 3.303-6.529.786-1.412 1.53-2.745 1.99-3.671 1.103-2.216.861-5.434.366-6.376-1.213-2.309-1.495-12.498.803-15.153l2.689 2.329-1.343-1.166 1.345 1.164c-1.033 1.269-1.116 9.583-.342 11.175 1.08 2.057 1.209 6.512-.333 9.612-.498 1-1.26 2.37-2.068 3.817-1.149 2.063-2.725 4.888-2.998 5.81-.123.548 1.194 2.336 2.261 2.629 2.976.814 3.774 4.771 4.617 8.963.458 2.275.93 4.626 1.683 5.951.15.265.451.624 1.32.703 2.53.233 7.458-2.24 11.616-7.245 1.804-2.169 3.6-1.604 4.287-1.26 4.451 2.218 5.302 16.407 3.477 24.145-1.678 7.117-5.079 8.612-7.637 8.612m33.092-34.18l-2.372-.079.034-.954-.881-.363.904-2.193 2.411.994-.035.829c0 .002-.027.682-.061 1.766m-5.686-2.414l-3.7-1.525.904-2.192 3.7 1.525-.904 2.192zm-6.166-2.542l-1.258-.519-2.351-.425.421-2.333 2.717.518 1.375.567-.904 2.192zm-6.234-1.417l-3.938-.711.421-2.333 3.938.71-.421 2.334z" />
+                        <path d="M51.216 46.311l-.227-3.293 3.249.586-.421 2.335-.253-.046.018.256z" />
+                        <path fill="#763DC6" class="extension-greensock"
+                            d="M75.671 95.147c-1.011-.219-2.192-.673-3.513-1.354l1.084-2.109c1.138.586 2.124.972 2.933 1.149l-.504 2.314zm3.341-.68l-1.825-1.516c.042-.051.254-.373.254-1.74 0-.257-.007-.533-.02-.815l2.369-.099c.014.317.021.624.021.914.001 1.584-.247 2.59-.799 3.256m-8.946-1.863a43.005 43.005 0 0 1-2.946-2.007l1.408-1.906a41.88 41.88 0 0 0 2.788 1.898l-1.25 2.015zm-4.816-3.451a58.88 58.88 0 0 1-2.686-2.313l1.605-1.746c.83.761 1.695 1.507 2.57 2.215l-1.489 1.844zm12.019-1.019c-.069-.891-.148-1.898-.187-2.919l-.023-.587 2.371-.091.021.587c.037.974.113 1.957.183 2.826l-2.365.184zm-16.411-2.928a46.555 46.555 0 0 1-2.419-2.614l1.806-1.537c.688.81 1.46 1.642 2.291 2.475l-1.678 1.676zm16.111-2.886a1569.39 1569.39 0 0 0-.141-3.462l2.369-.099c.049 1.155.096 2.322.142 3.468l-2.37.093zm-20.021-1.605c-.822-1.124-1.47-2.185-1.924-3.152l2.149-1.006c.388.828.957 1.757 1.688 2.756l-1.913 1.402zm19.78-4.162c-.055-1.215-.11-2.382-.166-3.452l2.367-.125c.057 1.077.112 2.25.169 3.471l-2.37.106zm-22.527-1.347a48.84 48.84 0 0 1-.838-3.451l2.323-.476a46.15 46.15 0 0 0 .797 3.278l-2.282.649zm22.228-4.4c-.096-1.483-.182-2.472-.256-2.939-.022-.139-.043-.29-.062-.458l2.358-.261c.014.126.028.24.045.346.088.547.18 1.582.28 3.162l-2.365.15zm-23.49-1.371a65.533 65.533 0 0 1-.454-3.498l2.359-.245c.123 1.191.267 2.293.438 3.37l-2.343.373zm23.027-4.427a96.442 96.442 0 0 1-.037-2.905l.001-.593 2.371.004-.001.587a102.6 102.6 0 0 0 .036 2.836l-2.37.071zm-23.688-1.403a133.039 133.039 0 0 1-.214-3.488l2.368-.118c.066 1.319.134 2.409.211 3.427l-2.365.179zm26.046-4.386l-2.372-.038c.019-1.217.046-2.411.075-3.476l2.37.062a300.467 300.467 0 0 0-.073 3.452m-26.367-1.416l-.073-1.734-.117-1.693 2.367-.162.193 3.486-2.37.103zm-.347-5.733l-.236-3.456 2.364-.162.237 3.458-2.365.16z" />
+                        <path fill="#FFEC3E"
+                            d="M25.597 12.485c-3.23 12.307-.495 31.969 35.411 37.502l12.847 1.186s10.869-21.147 1.384-34.587C65.75 3.146 53.167 3.098 44.667 7.346c0 0-17.849.486-19.07 5.139" />
+                        <path fill="#FFEC3E"
+                            d="M76.044 21.703c6.324 13.46 2.038 35.558 2.804 48.332.704 11.748-9.672-3.741-11.154-7.003-1.482-3.261-3.409 3.854-3.112 6.521.296 2.671-10.229-1.185-12.304-9.484-2.076-8.303-1.334-8.45-2.668-13.638-1.334-5.189 6.375-25.792 6.375-25.792l20.059 1.064z" />
+                    </svg> </div>
+                <ul class="flex-container-styling">
+                    <li class="flex-item-intro">
+                        <b>Great Lengths / Hot Heads Extensions:</b>
+                    </li>
+                    <li class="flex-item"> Zonal</li>
+                    <li class="flex-item">Volume</li>
+                    <li class="flex-item">Lengthening</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+    <script src="" async defer></script>
+</body>
+
+</html>
