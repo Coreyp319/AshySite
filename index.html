@@ -45,17 +45,17 @@
         }
 
         :root {
-            --main-color: #763dc6;
-            --secondary-bg-color: #c960f5;
-            --comp-color: #ffec3e;
-            --transparency-main: rgba(118, 61, 198, 0.75);
-            --transparency-secondary: rgba(200, 96, 245, 0.75);
+            --main-color: #FEC89A;
+            --secondary-bg-color: #FEC89A;
+            --comp-color: #FEC5BB;
+            --transparency-main: rgba(232, 232, 228, 0.75);
+            --transparency-secondary: rgba(254, 200, 154, 0.75);
             --headline-font: 'Kaushan Script', "San Serif";
             --secondary-font: "Open Sans", "Arial"
         }
 
         .site {
-            background-color: #eee
+            background-color: #F8EDEB
         }
 
         li {
@@ -76,10 +76,9 @@
 
         #nav a {
             font-family: var(--headline-font);
-            letter-spacing: .1rem;
+            letter-spacing: .2rem;
             color: #000;
-            padding-right: 55px;
-            padding-left: 55px;
+            padding: 0 50px;
             text-rendering: optimizeLegibility;
             height: auto;
             font-weight: 400;
@@ -88,8 +87,9 @@
             -webkit-transform: perspective(1px) translateZ(0);
             transform: perspective(1px) translateZ(0);
             box-shadow: 0 0 1px transparent;
-            position: relative;
-            overflow: hidden
+            /* position: relative;
+            overflow: hidden; */
+
         }
 
         #nav a:before {
@@ -108,11 +108,15 @@
             transition-timing-function: ease-out
         }
 
-        #nav a:active:before,
+        /* #nav a:active:before,
         #nav a:focus:before,
         #nav a:hover:before {
             left: 0;
             right: 0
+        } */
+
+        nav li:hover {
+            color: red;
         }
 
         #header-h1-APHD img {
@@ -128,7 +132,7 @@
         #header-h1-APHD h1 {
             font-size: 2rem;
             font-family: 'Kaushan Script', cursive;
-            color: #ffec3e;
+            /* color: var(--main-color); */
             display: flex;
             align-items: flex-end;
             letter-spacing: 3px;
@@ -300,7 +304,7 @@
 
         #cut-card,
         #extensions-card {
-            border-bottom: 0.5em solid #763dc6;
+            border-bottom: 0.5em solid var(--main-color);
             width: 100%;
             height: 100%;
             border-radius: 10px;
@@ -309,8 +313,8 @@
             -o-transition-timing-function: cubic-bezier(.455, .03, .515, .955);
             transition-timing-function: cubic-bezier(.455, .03, .515, .955);
             margin-bottom: 1em;
-            -webkit-box-shadow: 0 14px 28px rgba(118, 61, 198, .25), 0 10px 10px rgba(118, 61, 198, .22);
-            box-shadow: 0 14px 28px rgba(118, 61, 198, .25), 0 10px 10px rgba(118, 61, 198, .22)
+            -webkit-box-shadow: 0 14px 28px rgba(216, 226, 220, .25), 0 10px 10px rgba(118, 61, 198, .22);
+            box-shadow: 0 14px 28px rgba(216, 226, 220, .25), 0 10px 10px rgba(118, 61, 198, .22)
         }
 
         #extensions-card {
@@ -318,7 +322,7 @@
         }
 
         #treatments-card {
-            border-bottom: 0.5em solid #763dc6;
+            border-bottom: 0.5em solid var(--main-color);
             width: 100%;
             height: 100%;
             border-radius: 10px;
@@ -327,8 +331,8 @@
             -o-transition-timing-function: cubic-bezier(.455, .03, .515, .955);
             transition-timing-function: cubic-bezier(.455, .03, .515, .955);
             margin-bottom: 1em;
-            -webkit-box-shadow: 0 14px 28px rgba(118, 61, 198, .25), 0 10px 10px rgba(118, 61, 198, .22);
-            box-shadow: 0 14px 28px rgba(118, 61, 198, .25), 0 10px 10px rgba(118, 61, 198, .22)
+            -webkit-box-shadow: 0 14px 28px rgba(216, 226, 220, .25), 0 10px 10px rgba(118, 61, 198, .22);
+            box-shadow: 0 14px 28px rgba(216, 226, 220, .25), 0 10px 10px rgba(118, 61, 198, .22)
         }
 
         .services-cards-all {
@@ -348,7 +352,7 @@
             display: inline-block;
             text-decoration: underline;
             font-size: 2rem;
-            color: #222;
+            color: var(--main-color);
             text-align: center;
             width: 100%;
 
@@ -413,12 +417,16 @@
             flex-basis: 2
         }
 
-        #btn-marin-book:hover {
-            background-position: right center;
-            color: var(--comp-color);
-            -webkit-box-shadow: 0 14px 28px #763dc640, 0 10px 10px rgba(118, 61, 198, .75);
-            box-shadow: 0 14px 28px hsla(265, 55%, 51%, .25), 0 10px 10px rgba(118, 61, 198, .75)
+        .mdc-button:hover {
+            background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+            background-position: bottom;
+            background-repeat: repeat-x;
+            background-size: 20%;
+            border-bottom: 0;
+            padding-bottom: .3em;
+            text-decoration: none;
         }
+
 
         @media screen and (max-width:550px) {
             #header-h1-APHD img {
@@ -441,7 +449,7 @@
             }
 
             .locations-container {
-                color: #fff;
+                color: #222;
                 height: 50vh;
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -456,7 +464,7 @@
                 -webkit-box-align: center;
                 -ms-flex-align: center;
                 align-items: center;
-                background: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(#c960f5));
+                background: -webkit-gradient(linear, left top, right top, from(var()), to(#c960f5));
                 background: -webkit-linear-gradient(left, var(--main-color), #c960f5);
                 background: -o-linear-gradient(left, var(--main-color), #c960f5);
                 background: linear-gradient(to right, var(--main-color), #c960f5)
@@ -778,7 +786,6 @@
         .work-header {
             text-align: center;
             display: block;
-            background-color: #eee;
             margin-top: 3em;
             font-family: 'Kaushan Script';
             letter-spacing: .4rem;
@@ -1032,9 +1039,9 @@
         }
 
         .social-footer:hover {
-            filter: url(#drop-shadow);
-            -webkit-filter: drop-shadow(12px 12px 4px #000);
-            filter: drop-shadow(12px 12px 4px #000)
+
+            border-bottom: #f02fc2 solid 3px;
+
         }
     </style>
 
@@ -1058,9 +1065,9 @@
     <div>
         <div id="topnav">
             <ul id="nav">
-                <li><a href="index.html#Services">Services</a></li>
-                <li><a href="index.html#testimonials">Testimonials</a></li>
-                <li><a href="index.html#portfolio">Work</a></li>
+                <li><a class="mdc-button" href="index.html#Services">Services</a></li>
+                <li><a class="mdc-button" href="index.html#testimonials">Testimonials</a></li>
+                <li><a class="mdc-button" href="index.html#portfolio">Work</a></li>
                 <li><a class="mdc-button" href="index.html#book">Book an Appointment</a></li>
             </ul>
         </div>
