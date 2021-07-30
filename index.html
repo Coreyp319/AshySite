@@ -452,11 +452,19 @@
 
         @media screen and (max-width:550px) {
             #header-h1-APHD img {
-                display: flex;
-                align-content: flex-end;
-                width: 100%;
-                min-width: 25%;
-                height: 100%;
+                position: absolute;
+
+z-index:-100;
+right:50%
+            }
+
+            #header-h1-APHD h1{
+                color:whitesmoke
+            }
+
+            .underlay{
+width: calc(100% - 16px);
+right:8px;
             }
 
             ul {
@@ -1148,7 +1156,7 @@
         </h1>
         <div class="underlay">
     </div>
-    <img src="img/ash-pic.png"/>
+   
     </div>
     <!-- Services section containing a flex-box grid of items reacting according to media query -->
     <section>
