@@ -123,13 +123,16 @@
         }
 
         #header-h1-APHD img {
-            display: flex;
+          position: absolute;
+
+            z-index:-100;
+            /* display: flex;
             align-content: flex-end;
             width: 50%;
             min-width: 25%;
             height: 100%;
             -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
-            filter: drop-shadow(2px 2px 0 var(--header));
+            filter: drop-shadow(2px 2px 0 var(--header)); */
         }
 
         #header-h1-APHD h1 {
@@ -153,13 +156,28 @@
         /* linear-gradient(to right, var(--main-color), #c960f5) */
         #header-h1-APHD {
             height: 98vh;
-            background-image: linear-gradient(to right, var(--main-color), #c960f5), url(img/ash-pic.jpg);
+            background-image: linear-gradient(to right, var(--main-color), #c960f5), url(img/ash-pic.png);
             background-size: auto;
-            background-blend-mode: soft-light;
+            background-blend-mode: multiply;
             background-repeat: no-repeat;
             background-position: center center;
             border-radius: 15px 15px 0 0;
         }
+
+        .underlay{
+            width: 50%;
+    position: absolute;
+    margin-top: -2em;
+    margin-left: auto;
+    opacity: 40%;
+    margin-right: auto;
+    top: 75%;
+    right: 25%;
+    mix-blend-mode: darken;
+    height: 20%;
+    opacity: 40%;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        } 
 
         .location-headers::before {
             display: contents;
@@ -1119,16 +1137,18 @@
         <img class="menu-hamburger" src="img/menu.svg">
     </span>
     <!-- End of mobile menu -->
+
     <div id="header-h1-APHD">
 
         <!-- <img src="img\logov2.svg">       -->
 
-        <!-- <img src="img\logov2.svg"> -->
+
         <h1>Ashley Preston
             <br>Hair Design
         </h1>
-
-
+        <div class="underlay">
+    </div>
+    <img src="img/ash-pic.png"/>
     </div>
     <!-- Services section containing a flex-box grid of items reacting according to media query -->
     <section>
